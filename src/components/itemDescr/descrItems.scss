@@ -1,0 +1,53 @@
+// TitleDescr
+.title-descr{
+    h3{
+        text-align: center;
+        font-size: 1.5em;
+        margin: 12px 0;
+    }
+    p{
+        margin: 8px 0;
+    }
+
+}
+// LinkDescr
+.links{
+    margin: 20px 0;
+    p{
+        margin: 7px 0;
+    }
+    a{
+        margin-right: 15px;
+        background-color: #d484ac;
+        border-radius: 5px;
+        padding: 3px 5px;
+        transition: padding .2s ease;
+        text-decoration: none;
+        color: indigo;
+        &:hover{
+            background-color: #eca3c8;
+            padding: 3px 7px;
+        }
+    }
+}
+// ImageDescr
+.img-div{
+    text-align: center;
+    img{
+        max-width: 100%;
+        max-height: 600px;
+    }
+}
+// Button
+.btn{
+    padding: 5px 10px;
+    background-color: #075d2f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 7px 0;
+    transition: all .2s ease;
+    &:hover{
+        background-color: #c01888;
+    }
+}

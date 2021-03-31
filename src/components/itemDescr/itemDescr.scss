@@ -1,0 +1,35 @@
+.descr{
+    margin-top: 15px;
+    margin-left: 20px;
+    position: relative;
+    width: 0;
+    transition: width .8s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+    &__inner{
+        position: sticky;
+        position: -webkit-sticky;
+        width: 660px;
+        top: 0;
+        background-color: #abd4c0;
+        padding: 15px;
+        height: fit-content;
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+}
+#show.descr{
+    width: 700px!important;
+}
+#hide.descr{
+    width: 0px!important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.descr__inner::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.descr__inner {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

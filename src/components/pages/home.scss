@@ -1,0 +1,7 @@
+.random{
+    display: flex;
+    margin-top: 50px;
+    & > div{
+        width: 33%;
+    }
+}
