@@ -18,8 +18,9 @@ export default class Home extends React.Component{
                 Может быть в будущем появятся и другие животные.
             </MainTitle>
             <Title2 align='center'>Ниже просто случайные картинки с котами.</Title2>
+            <p className='update-text'>(обновляются каждые 10 сек)</p>
             <Text1 align='center'>
-                Эти случайные картинки предоставлены сервисом <a href='https://docs.thecatapi.com/' target='_blank' rel='noreferrer'>TheCatApi</a>, 
+                Эти случайные картинки предоставлены сервисом <a className='link-api' href='https://docs.thecatapi.com/' target='_blank' rel='noreferrer'>TheCatApi</a>, 
                 - это база данных котов, для обзора существующих пород и их описания перейдите во вкладку <b>CATS</b>.
             </Text1>
             <div className='random'>
