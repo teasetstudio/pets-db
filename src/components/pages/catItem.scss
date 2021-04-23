@@ -1,0 +1,9 @@
+.block{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__info{
+        margin: 0 10px;
+    }
+}

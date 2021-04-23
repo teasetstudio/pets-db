@@ -15,15 +15,20 @@ export default class CatsService {
         const res = await this.getResource(`/breeds`);
         return res.filter(({image})=>image && image.url).map(this._tranformCat);
     }
+    getCat = async (id) => {
+        const res = await this.getResource(`/breeds/${id}`);
+        return this._tranformCat(res);
+    }
     getRandomImage = async () => {
         const res = await this.getResource(`/images/search?api_key=8a9414ac-a83a-45b0-9b28-d40a3120928c`);
         return res[0].url;
     }
     _tranformCat (cat) {
+        const img = cat.image ? cat.image.url : `https://cdn2.thecatapi.com/images/${cat.reference_image_id}.jpg`
         return {
             id: cat.id,
             name: cat.name,
-            image: cat.image.url,
+            image: img,
             origin: cat.origin,
             weight: cat.weight.metric,
             adaptability: cat.adaptability,

@@ -23,9 +23,9 @@ export default class Home extends React.Component{
                 - это база данных котов, для обзора существующих пород и их описания перейдите во вкладку <b>CATS</b>.
             </Text1>
             <div className='random'>
-                <RandomCat interval={10000} />
-                <RandomCat interval={10000} />
-                <RandomCat interval={10000} />
+                <RandomCat interval={7000} />
+                <RandomCat interval={7000} />
+                <RandomCat interval={7000} />
             </div>
             </>
         )

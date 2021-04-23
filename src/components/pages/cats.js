@@ -1,7 +1,7 @@
 import React from 'react';
 import CatsService from '../../services/catsService';
 import Spinner from '../spinner';
-import MainTitle from '../wrapText';
+import MainTitle,{Text1} from '../wrapText';
 import ItemDescr from '../itemDescr';
 
 import './cats.scss';
@@ -51,7 +51,10 @@ export default class Cats extends React.Component{
         const {catsList, catDescr} = this.state;
 
         if (!catsList) {
-            return (<div style={{textAlign: 'center', marginTop: '100px'}}><Spinner /></div>)
+            return (<div style={{textAlign: 'center', marginTop: '100px'}}>
+                        <Spinner />
+                        <Text1 align='center'>Это может занять от 5 до 30 сек...</Text1>
+                    </div>)
         }
 
         const cats = this.renderItems(catsList);

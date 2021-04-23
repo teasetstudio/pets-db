@@ -34,8 +34,14 @@ const ImageDescr = ({image}) => {
 
 const Button = ({text, clickAction}) => {
     return(
-        <div>
-            <button className='btn' onClick={clickAction}>{text}</button>
+        <button className='btn' onClick={clickAction}>{text}</button>
+    )
+}
+
+const Button2 = ({text, clickAction}) => {
+    return(
+        <div className='btn2'>
+            <button className='btn2__button' onClick={clickAction}>{text}</button>
         </div>
     )
 }
@@ -45,5 +51,6 @@ export {
     TitleDescr,
     LinkDescr,
     ImageDescr,
-    Button
+    Button,
+    Button2
 };

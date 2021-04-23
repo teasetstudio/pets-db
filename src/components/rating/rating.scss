@@ -1,0 +1,11 @@
+.rate{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    &__item{
+        margin: 20px 15px;
+    }
+}

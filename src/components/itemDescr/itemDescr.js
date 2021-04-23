@@ -1,15 +1,16 @@
 import React from 'react';
-import {TitleDescr, LinkDescr, ImageDescr, Button} from './';
+import {TitleDescr, LinkDescr, ImageDescr, Button, Button2} from './';
+import {withRouter} from 'react-router-dom';
 
 import './itemDescr.scss';
 
-export default class ItemDescr extends React.Component {
+class ItemDescr extends React.Component {
     state={
         animation: null
     }
 
     componentDidMount() {
-        // a little delay (10 ms) for the animation to work
+        // a little delay (10 ms) for open animation to work
         setTimeout(()=>{
             this.setState({animation: 'show'});
         },10)
@@ -35,8 +36,14 @@ export default class ItemDescr extends React.Component {
                     <TitleDescr {...cat} />
     
                     <LinkDescr {...cat} />
+                    
+                    <Button2 text='Open more' clickAction={() => {
+                        this.props.history.push(cat.id.toString());
+                    }} />
                 </div>
             </div>
         )
     }
 }
+
+export default withRouter(ItemDescr);

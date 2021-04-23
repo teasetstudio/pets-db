@@ -12,8 +12,8 @@ const Header = () => {
                         <Link to='/'>Animals DB</Link>
                     </div>
                     <nav>
-                        <Link to='/cats'>Cats</Link>
-                        <Link to='/about'>About</Link>
+                        <Link to='/cats/'>Cats</Link>
+                        <Link to='/about/'>About</Link>
                     </nav>
                 </div>
             </div>
